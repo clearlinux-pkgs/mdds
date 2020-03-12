@@ -4,7 +4,7 @@
 #
 Name     : mdds
 Version  : 1.5.0
-Release  : 5
+Release  : 6
 URL      : https://dev-www.libreoffice.org/src/mdds-1.5.0.tar.bz2
 Source0  : https://dev-www.libreoffice.org/src/mdds-1.5.0.tar.bz2
 Summary  : A collection of multi-dimensional data structure and indexing algorithm

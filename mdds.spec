@@ -4,7 +4,7 @@
 #
 Name     : mdds
 Version  : 1.5.0
-Release  : 6
+Release  : 7
 URL      : https://dev-www.libreoffice.org/src/mdds-1.5.0.tar.bz2
 Source0  : https://dev-www.libreoffice.org/src/mdds-1.5.0.tar.bz2
 Summary  : A collection of multi-dimensional data structure and indexing algorithm
@@ -55,11 +55,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1580324205
+export SOURCE_DATE_EPOCH=1592625321
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$CFLAGS -fno-lto "
-export FFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
 export CXXFLAGS="$CXXFLAGS -fno-lto "
 %configure --disable-static
 make  %{?_smp_mflags}
@@ -72,7 +72,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1580324205
+export SOURCE_DATE_EPOCH=1592625321
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/mdds
 cp %{_builddir}/mdds-1.5.0/LICENSE %{buildroot}/usr/share/package-licenses/mdds/9b284bb2e965bb644bd7945b4198c55020a2714a
